@@ -1,0 +1,4 @@
+baseURL = 'https://clearpsychiatric.com/'
+languageCode = 'en-us'
+title = 'Clear Psychiatric - Crystal Lake, IL'
+theme = 'hugo-profile'
