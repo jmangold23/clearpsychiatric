@@ -3,3 +3,5 @@ languageCode = 'en-us'
 title = 'Clear Psychiatric - Crystal Lake, IL'
 theme = 'hugo-profile'
 publishDir = 'docs'
+relativeURLs = true
+canonifyURLs = true
