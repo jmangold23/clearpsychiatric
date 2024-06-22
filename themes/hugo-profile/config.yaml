@@ -1,0 +1,104 @@
+baseURL: "https://clearpsychiatric.com/"
+languageCode: "en-us"
+title: "Clear Psychiatric"
+theme: "hugo-profile"
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+  page:
+    - HTML
+    - RSS
+
+paginate: 3
+enableRobotsTXT: true
+disqusShortname: "your-disqus-shortname"
+googleAnalytics: "G-MEASUREMENT_ID"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+menus:
+  main:
+    - identifier: "Appointments"
+      name: "Appointments"
+      title: "Appointments"
+      url: "/appointment"
+      weight: 1
+    - identifier: "Services"
+      name: "Services"
+      title: "Services"
+      url: "/#services"
+      weight: 2
+
+params:
+  title: "Clear Psychiatric"
+  description: "Psychiatric Services in Crystal Lake, IL"
+  favicon: "/fav.png"
+  useBootstrapCDN: false
+  animate: true
+
+  navbar:
+    align: "ms-auto"
+    brandLogo: "/logo.png"
+    brandName: "Clear Psychiatric"
+    disableSearch: true
+    stickyNavBar:
+      enable: true
+      showOnScrollUp: true
+
+  hero:
+    enable: true
+    intro: "Your Path to Mental Wellness Starts Here"
+    subtitle: "Welcome to Clear Psychiatric"
+    content: "Located in Crystal Lake, IL. Where your mental health and well-being are our top priority. Our compassionate and experienced team is dedicated to providing personalized care to help you achieve a balanced and fulfilling life."
+    image: "/images/headshot.png"
+    bottomImage:
+      enable: true
+    button:
+      enable: true
+      name: "Book an Appointment"
+      url: "/appointment"
+      download: false
+      newPage: false
+
+  about:
+    enable: true
+    title: "About Us"
+    image: "/images/about.png"
+    content: |-
+      As a psychiatric nurse practitioner with extensive experience in both inpatient and outpatient settings, I am committed to providing compassionate, holistic care to my patients. In my practice, I prioritize creating a safe and supportive environment where patients can explore their mental health and physical concerns and develop effective coping strategies.
+
+  services:
+    list:
+      "Medication Management": "Comprehensive evaluation and management of psychiatric medications to ensure optimal treatment outcomes."
+      "Food Intake Treatment": "Treatment of food/intake related conditions such as: eating disorders, binge eating disorder, obesity, medication related weight changes. Treatment of these conditions with semaglutide, tirzepatide, metformin and other FDA approved medications and treatments for obesity."
+    "Telehealth": "Convenient online therapy sessions for patients who prefer remote consultations."
+
+  contact:
+    enable: false
+    title: "Contact Us"
+    content: "Contact us to schedule an appointment or inquire about our services."
+    formspree:
+      enable: false
+      formId: "your-form-id"
+
+  footer:
+    recentPosts:
+      enable: false
+      path: "blogs"
+      
+  singlePages:
+    readTime:
+      enable: false
+    scrollprogress:
+      enable: true
+
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
